@@ -149,7 +149,7 @@ nav buttton{
 }
 .accordion li{
     list-style: none;
-    width: 100%;
+    width: 100%;/*100% ofparent width 750*/
     padding: 5px;
 }
 .accordion li label{
@@ -176,12 +176,12 @@ input[type="radio"]{
     display: none;
 }
 .accordion .content {
-     background: #303030;
+     background: #303030;/*content inside the ui*/
      text-align: left;
      padding: 0 20px;
      max-height: 0;
      overflow: hidden; /*all the details are hidden*/
-     transition: max-height 0.5s, padding 0.5s ;
+     transition: max-height 0.5s, padding 0.5s ;/*movement like closing and opening*/
 }
 
 .accordion input[type="radio"]:checked + label +.content{
@@ -190,7 +190,7 @@ input[type="radio"]{
 
 
 }
-.accordion input[type="radio"]:checked + label::after{
+.accordion input[type="radio"]:checked + label::after{ /* + is called combinator selecting  adajacent sibling select*/
     transform: rotate(135deg);
 }
 
@@ -255,3 +255,4 @@ input[type="radio"]{
     margin-bottom: 10px;
 }
 /*media query*/
+/*accordion class  build in,cliking it opening it*/
